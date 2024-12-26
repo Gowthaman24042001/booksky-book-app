@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocksy App</title>
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="./style.css">
+     <script src="./script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="book-box">
+           <h1>Book 1</h1>
+           <h4>Gowthaman</h5>
+           <h6> 300.Rs</h6>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis numquam, blanditiis repellat quo dignissimos possimus assumenda accusamus deleniti maxime cum quos iure? Velit, recusandae vero a saepe hic esse ipsa.</p>
+           <button onclick="deletebook(event)">Delete</button>
+        </div>
+       <div class="overlay">
+
+       </div>
+<!-- Popup starts from here -->
+        <div class="popup-box">
+          <label for="text"> Enter Book Name </label>   
+          <input type="text" placeholder="Enter your Book Name" id="book-name">
+          <label for="text">Author Name</label>
+          <input type="text" placeholder="Enter your Author Name" id="book-author-name">
+          <labe for="text">Book Price</labe>
+          <input type="number" placeholder="Enter your Book Price" id="book-price">
+          <label for="text">Book Description</label>
+          <textarea name="description" id="book-description" id="book-description"></textarea>
+          <div class="popup-buttons">
+           <button id="add-book"> Add Book </button>
+           <button id="cancel-book"> Cancel </button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Add button + popup -->
+    <button id="add-button" class="add-button">+</button>
+    <h6 class="watermark">
+        Designed and Developed By <a href="https://gowtham24042001.wixsite.com/gowthaman-portfolio/projects"><b>Gowthaman.B</b></a>
+    </h6>
+    
+    <!-- Script File -->
+    <script src="./script.js"></script>
+
+</body>
+</html>

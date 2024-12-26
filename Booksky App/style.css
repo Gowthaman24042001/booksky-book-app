@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: rgb(38,27,227);
+    background: linear-gradient(184deg, rgba(38,27,227,1) 0%, rgba(51,62,249,1) 49%, rgba(57,128,240,1) 100%);
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping if there are too many items */
+    /* justify-content: space-betwee; Space out the items */
+    padding:10px;
+    position: relative;
+}
+.book-box{
+    width: 30%;
+    height: max-content;
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+.book-box button{
+    background-color: #e60404;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 2px;
+    color: white; 
+    margin-top: 10px;
+    cursor: pointer;
+}
+.book-box h1{
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+.book-box h4{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.book-box h6{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+/**Overlay conatiner **/
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity:.8;
+    z-index: 1;
+    display: none;
+}
+
+/** Popup box style starts from here **/
+
+.popup-box{
+    width: 40%;
+    display: none;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+    position:absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+.popup-box input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(188, 188, 188);
+}
+.popup-box textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(188, 188, 188);
+}
+.popup-box input:focus{
+    outline: none;
+}
+.popup-box textarea:focus{
+    outline: none;
+}
+.popup-buttons{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.popup-buttons button:first-child{
+    background-color: #3ea241;
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.popup-buttons button:last-child{
+    background-color: red;
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/** Add button **/
+.add-button{
+    background-color: white;
+    color: black;
+    font-size: 35px;
+    padding: 4px 15px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+}
+/** Watermark **/
+
+.watermark{
+    position:fixed;
+    left: 30px;
+    bottom: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+a{
+    color: rgb(255, 225, 0);
+}
